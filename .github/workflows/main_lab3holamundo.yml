@@ -61,5 +61,5 @@ jobs:
         with:
           app-name: 'Lab3HolaMundo'
           slot-name: 'Production'
-          package: .
+          package: . 'src'
           
