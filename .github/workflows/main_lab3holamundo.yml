@@ -51,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_A3410DA7AA9E4FDD9F3463044F076347 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_52CFE676CB8F4BE68A51B9360C501077 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_8B4F769A4EF1402BAD01459FE9A55CBF }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_0269F56B3D284B46A8D9E889AC2F5522 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_6F4474091A9F4C44B1A3C67FA7773567 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D127A7AF6003401EBFD33F246BC038CE }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
@@ -61,5 +61,5 @@ jobs:
         with:
           app-name: 'Lab3HolaMundo'
           slot-name: 'Production'
-          package: . 'src'
+          package: .
           
